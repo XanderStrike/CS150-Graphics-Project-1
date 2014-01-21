@@ -1,8 +1,8 @@
 ////////////////////////////////////////////////////////////////////////
 //
-//   Harvard Computer Science
-//   CS 175: Computer Graphics
-//   Professor Steven Gortler
+//   Westmont Computer Science
+//   CS 150: Computer Graphics
+//   Professor David Hunter
 //
 ////////////////////////////////////////////////////////////////////////
 
@@ -332,7 +332,7 @@ static void initGlutState(int argc, char **argv) {
   glutInit(&argc,argv);
   glutInitDisplayMode(GLUT_RGBA|GLUT_DOUBLE|GLUT_DEPTH);
   glutInitWindowSize(g_width, g_height);      // create a window
-  glutCreateWindow("CS 175: Hello World");    // title the window
+  glutCreateWindow("CS 150: Hello World");    // title the window
 
   glutDisplayFunc(display);                   // display rendering callback
   glutReshapeFunc(reshape);                   // window reshape callback
