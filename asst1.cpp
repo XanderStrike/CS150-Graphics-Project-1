@@ -235,10 +235,18 @@ static void display(void) {
 ///  generated and glut is told to call this reshape
 ///  callback function to handle it appropriately.
 
+
 static void reshape(int w, int h) {
   g_width = w;
   g_height = h;
-  glViewport(0, 0, w, h);
+  int offset;
+  if(w > h) {
+    offset = (w - h) / 2;
+    glViewport(offset, 0, h, h);
+  } else {
+    offset = (h - w) / 2;
+    glViewport(0, offset, w, w);
+  }
   glutPostRedisplay();
 }
 
