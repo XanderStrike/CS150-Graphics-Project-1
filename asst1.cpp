@@ -390,7 +390,7 @@ static void initTextures() {
   g_tex1.reset(new GlTexture());
 
   loadTexture(*g_tex0, "smiley.ppm");
-  loadTexture(*g_tex1, "reachup.ppm");
+  loadTexture(*g_tex1, "me.ppm");
 
   glActiveTexture(GL_TEXTURE0);
   glBindTexture(GL_TEXTURE_2D, *g_tex0);
